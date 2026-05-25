@@ -11,7 +11,7 @@ services:
         condition: service_healthy
 
   db:
-    image: postgres:17-alpine
+    image: postgres:18-alpine
     environment:
       POSTGRES_USER: ${POSTGRES_USER:-secondbrain}
       POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:-secondbrain}
